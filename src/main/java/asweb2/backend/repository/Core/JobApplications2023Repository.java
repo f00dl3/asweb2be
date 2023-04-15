@@ -6,4 +6,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface JobApplications2023Repository extends JpaRepository<JobApplications2023, Integer> {
+
+    String table = "2023JobApplications";
+
 }
