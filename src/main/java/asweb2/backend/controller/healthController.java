@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@CrossOrigin(origins = "*")
 public class healthController {
-	
-	@CrossOrigin(origins = "*")
+
 	@RequestMapping(value = "/health", method = RequestMethod.GET)
 	public ResponseEntity<Object> getHealth() {
 		String healthStatus = "Health is ok!";
